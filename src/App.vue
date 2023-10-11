@@ -35,7 +35,7 @@ const elo = (index) => {
     <section>
       <TransitionGroup name="list">
         <div v-for="(i, index) in notes" :key="i.id" :style="{ backgroundColor: i.bgColor }">
-          <p :style="{ textDecoration: i.done ? 'line-through' : '' }">{{ i.note }}</p>
+          <p :style="{ textDecoration: i.done ? 'line-through  2px' : '' }">{{ i.note }}</p>
           <div class="button1">
           <button @click="i.done = !i.done">done</button>
           <button @click="elo(index)">delete</button>
@@ -92,6 +92,7 @@ p {
   font-size: large;
   font-weight: 500;
   color: gray;
+  text-decoration-color: rgb(255, 0, 0);
 }
 
 .list-enter-from {
