@@ -132,9 +132,12 @@ p {
   transition: all 1s ease;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   textarea {
     width: 100%;
+  }
+  section{
+    justify-content: center;
   }
 
 }
