@@ -29,7 +29,7 @@ const elo = (index) => {
 <template>
   <div>
     <div class="addtext">
-      <textarea rows="5" type="text" v-model.trim="newNote" @keydown.enter="addNote"> </textarea>
+      <textarea rows="5" type="text" v-model.trim="newNote" placeholder="Add Note Here" @keydown.enter="addNote"> </textarea>
       <button @click="addNote">Add Note</button>
     </div>
     <section>
@@ -77,6 +77,7 @@ button {
 section {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 section>div {
@@ -96,6 +97,7 @@ p {
 .list-enter-from {
   opacity: 0;
   scale: 0;
+  translate: 500px 0;
   rotate: 360deg;
 }
 
